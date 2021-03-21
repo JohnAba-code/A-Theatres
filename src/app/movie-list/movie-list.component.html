@@ -1,0 +1,6 @@
+<h1>All Movies</h1>
+
+<div *ngFor="let movie of movies">
+<a id="imageName" [title]="movie.title" [routerLink]="['/movie', movie.id]">{{ movie.title }}</a>
+<div id="image"><img class="imgSize" src="{{ movie.Image }}"></div>
+</div>
